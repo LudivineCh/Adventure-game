@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/snakegame.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div id="scoreBox">Score: 0</div>
+      <div id="introScreen">
+        <div id="introScreenContent">
+          <h1>
+            Challenge to feed snake with 35 snacks. Are you ready to take this
+            challenge?
+          </h1>
+          <div id="btnStart" class="button">Start feeding the snake!</div>
+        </div>
+      </div>
+      <div id="board"></div>
+      <div id="endScreen">
+        <div id="endScreenContent">
+          <h1 id="txtEndTitle">You won, Quetzalcoatl is saved!</h1>
+          <div id="btnEnd" class="button">Go to the next challenge!</div>
+        </div>
+      </div>
+      <div id="overScreen">
+        <div id="overScreenContent">
+          <h1 id="txtOverTitle">Snake is dead, maybe you should try again?</h1>
+          <div id="btnOver" class="button">Play Again</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/snakegame.js"></script>
+</html>

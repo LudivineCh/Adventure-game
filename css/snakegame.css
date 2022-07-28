@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: linear-gradient(rgb(41, 2, 41), rgb(162, 131, 162), rgb(41, 2, 41) );
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant SC', serif;
+    color:rgb(41, 2, 41);
+
+}
+
+
+#scoreBox {
+position: absolute;
+top: 1px;
+margin-top: 5px;
+font-size: 39px;
+background-color: white;
+ padding: 20px;
+border: #164116 solid 2px;
+    
+}
+
+
+#board{
+    background-image: url(../img/snakegame/pawel-czerwinski-j5kjDQFiEnM-unsplash.jpg);
+    background-attachment:fixed;
+    background-size: cover;
+    width: 90vmin;
+    height: 92vmin;
+    border-radius: 5%;
+    border: 2px solid #000000;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background-image: url(../img/snakegame/snake-svgrepo-com.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    border-radius: 9px;
+    
+}
+
+.snake {
+    background: linear-gradient(rgb(140, 255, 0), rgb(4, 116, 52));
+    border: 2px solid rgb(36, 94, 45);
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+
+
+#introScreen {
+    position: absolute;
+    z-index: 101;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(162, 131, 162);
+    border: rgb(162, 131, 162) 2px solid;
+    border-radius: 5%;
+}
+
+#introScreenContent {
+    padding: 20px;
+    background-color: rgb(162, 131, 162);
+    text-align: center;
+    border-radius: 5%;
+}
+
+#endScreen {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 101;
+    border-radius: 5%;
+    width: 500px;
+    height: 200px; 
+    background-color: rgb(162, 131, 162);
+    display: none;
+}
+
+#endScreenContent {
+    border-radius: 5%;
+    padding: 20px;
+    background-color: rgb(162, 131, 162);
+    text-align: center;
+}
+
+#overScreen {
+    position: absolute;
+    z-index: 101;
+    width: 500px;
+    height: 200px;
+    border-radius: 5%;
+    background-color: rgb(162, 131, 162);
+    border: rgb(162, 131, 162) 2px solid;
+    display: none;
+}
+
+#overScreenContent {
+    padding: 10px;
+    background-color: rgb(162, 131, 162);
+    border-radius: 5%;
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.button:hover {
+    background-color: rgb(162, 131, 162);
+    color:white;
+}
+
+@media screen and (max-width: 520px) {
+    #introScreen {
+        width: 95%;
+    }
+    #endScreen {
+        width: 95%;
+        height: 200px;
+            
+    }
+    #overScreen {
+         width: 95%;
+     }
+
+    .body {
+        background-size: 300vw 100vh;
+    }
+
+    #board {
+        background-attachment: unset;
+    }
+
+    #scoreBox {
+        top: 15%;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:920px) and (orientation: landscape) {
+    #scoreBox {
+            font-size: 20px;
+            padding: 3px;
+        }
+}
