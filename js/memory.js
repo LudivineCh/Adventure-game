@@ -25,7 +25,7 @@ function matchCards(img1, img2) {
         matched++;
         if(matched == 8) { // If hero matched all the cards
             //to validate the memory game, add a key to the session Storage
-            localStorage.setItem('memory', 'passed');
+            window.localStorage.setItem('memory', 'passed');
             // Display the end button
             document.getElementById("endScreen").style.display = "block";
             btnEnd.addEventListener("click", function () {
