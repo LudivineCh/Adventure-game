@@ -56,7 +56,7 @@ function gameEngine() {
   });
 
   //WIN : If you get a score of 3 then it redirects you to the adventure game
-  if (score === 3) {
+  if (score === 15) {
     inputDir = { x: 0, y: 0 };
     snakeArr = [{ x: 13, y: 15 }];
     document.getElementById("endScreen").style.display = "block";
