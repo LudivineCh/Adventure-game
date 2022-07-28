@@ -182,11 +182,11 @@ let button = document.querySelector('#start-button')
 // get the info inside div content (h2, input, label, button)
 let divContent = document.querySelector('#content')
 // After hero broke the code of the memory game: goes straight to chapterSix
-if (sessionStorage.getItem('memory')) {
+if (window.sessionStorage.getItem('memory')) {
   // Immediately Involked Function Expression
   (function (){
     // Fill up our object "story" with content
-    let nameHero = sessionStorage.getItem('hero');
+    let nameHero = window.sessionStorage.getItem('hero');
     story = readStory(nameHero.value, "chapterSix");
     // call function to move to another chapter
     nextChapter();
@@ -202,7 +202,7 @@ if (sessionStorage.getItem('memory')) {
       return;
     } else {
         // store hero name
-        sessionStorage.setItem('hero', nameInput.value);
+        window.sessionStorage.setItem('hero', nameInput.value);
         // Fill up our object "story" with content
         story = readStory(nameInput.value, "chapterOne");
         // call function to move to another chapter
