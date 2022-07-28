@@ -186,7 +186,7 @@ if (sessionStorage.getItem('memory')) {
   // Immediately Involked Function Expression
   (function (){
     // Fill up our object "story" with content
-    let nameInput = localStorage.getItem('hero')
+    let nameHero = localStorage.getItem('hero');
     story = readStory(nameInput.value, "chapterSix");
     // call function to move to another chapter
     nextChapter();
@@ -195,7 +195,7 @@ if (sessionStorage.getItem('memory')) {
   // If start button is clicked, apply function
   button.addEventListener('click', function() {
     // Get the text inside the start button field
-    let nameInput = document.querySelector('#name-input')
+    let nameInput = document.querySelector('#name-input');
     //If the person forget to write his name :
     if (nameInput.value == "") {
       alert("Please, tell us your beautiful name");
