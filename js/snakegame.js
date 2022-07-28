@@ -46,7 +46,7 @@ function gameEngine() {
     score = 0;
     document.getElementById("overScreen").style.display = "block";
     btnOver.addEventListener("click", function () {
-      location.href = "../snakegame.html";
+      location.href = "../js/snakegame.html";
     });
   }
 
