@@ -8,7 +8,7 @@ Save Quetzalcoatl : The Ultimate Quest
   - riddles: Ludivine Chabaud
 
 
-## Informatiosn regarding the audio of the Snakegame:
+## How to hear the audio of the Snakegame:
 Snake Game has audio file which can be listen by changing default setting of browser.
 In Firefox you can enable music by going to:
   menu -> settings -> Privacy & Settings -> autoplay -> Settings :
